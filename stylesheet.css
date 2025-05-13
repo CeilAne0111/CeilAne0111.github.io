@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 20%;
+    margin: 0 auto;
+    border-right: 1px solid rgb(230, 230, 230);
+    box-sizing: border-box;
+}
+
+header {
+    height: 25%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    box-sizing: border-box;
+}
+
+#header_logo {
+    width: 50%;
+}
+
+.contents {
+    height: 55%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 左寄せ */
+    padding: 0 2%; /* 左余白 */
+    gap: 70px; /* リスト項目間の間隔 */
+}
+
+.li1 {
+    padding-top: 60px;
+}
+
+li {
+    list-style: none;
+    width: 100%;
+}
+
+.contents .item {
+    display: flex;
+    align-items: center; /* 上下中央揃え */
+    gap: 2%; /* 画像とテキスト間の間隔 */
+    text-decoration: none; /* 下線を削除 */
+    color: #333; /* リンク色を黒に変更 */
+    position: relative;
+}
+
+.contents .item::before{
+    content: ""; /* 擬似要素の内容は空に設定 */
+	position: absolute; /* リンクを基準に絶対位置を指定 */
+    left: 0; /* 下線を左端から表示するための開始位置 */
+	bottom: 0; /* リンクテキストの下に下線を配置 */
+	width: 0; /* 初期の下線幅を0に設定 */
+	height: 2px; /* 下線の太さ */
+	background-color: #601986; /* 下線の色 */
+	transition: all 2s ease; /* ホバー時の下線アニメーション効果 */
+}
+
+.contents .item:hover::before {
+	width: 100%; /* ホバー時に下線が全体に広がるよう設定 */
+}
+
+img {
+    width: 22%;
+    height: auto;
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#footer_logo {
+    width: 70%;
+}
+
+.main {
+    width: 80%;
+}
+
+p {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.step3img img {
+    float: left;
+}

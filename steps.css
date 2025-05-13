@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 34px;
+    padding-bottom: 5%;
+}
+
+.content {
+
+    padding: 2%;
+}
+
+img {
+    margin: 30px 0;
+    width: 40%;
+}
+
+#sttx1 {
+    width: 60%;
+    float: left;
+}
+
+#study1 {
+    float: right;
+}
+
+#sttx2 {
+    width: 60%;
+    float: left;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    text-align: right;
+    padding-bottom: 20px;
+}
